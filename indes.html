@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Store Pepe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Iniciar Sesión</h2>
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="checkPassword()">Ingresar</button>
+    </div>
+    
+    <div id="panel" class="hidden">
+        <h1>HACK STORE PEPE SENSIS</h1>
+        <label for="marcas">Marcas:</label>
+        <select id="marcas"></select>
+        <input type="text" id="modelo" placeholder="Modelo"> <label for="modelo">Modelo</label>
+        <button id="generar-btn" onclick="iniciarCuentaRegresiva()">Generar</button>
+        <p id="contador" class="hidden"></p>
+        <div id="resultados"></div>
+        <button id="regenerar-btn" onclick="generarValores()" disabled>Regenerar</button>
+        <p id="contador-regenerar" class="hidden"></p>
+        <p>IG: pepehacksff | TT: hackstorepepe</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
